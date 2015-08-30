@@ -18,6 +18,24 @@ In practice, this took X time.  This includes
 Consider the following questions:
 
 1. What is a simple model that would predict this time?
+
+let n_row be the number of rows,
+    n_max be the maximum number of students in all rows
+    t_one be the time it takes to count one person
+    t_start be the time to start the process
+    t_compute be the time it takes to compute row counts
+    t_gather be the time to gather counts
+    t_ari be the time to do arithmetic
+    then
+        t_total = t_start + t_compute + t_gather + t_ari + t_one * n_max;
+        
 2. What about a simple model to predict time for one person to count?
+
+let n_total be the number of students in total
+    then
+        t = n_total * t_one;
 3. How big should the class be before the parallel method takes less time?
+     if t_total < t
+     then
+         n_total > (t_start + t_compute + t_gather + t_ari + t_one * n_max) / t_one;
 
