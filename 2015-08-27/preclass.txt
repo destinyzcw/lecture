@@ -51,7 +51,7 @@
 5.  What is the approximate theoretical peak flop rate for your own machine?
     
      Form the equation listed on WiKi and "Most microprocessors today can carry out 4 FLOPs per clock cycle"
-    and my processor is 2.7 GHz Intel Core i5 with 2 cores.
-    Therefore, the performance of my computer should be 2*2.7*4 gigaFLOPS = 21.6 gigaFLOPS
+    and the Turbo Boost of my processor is 3.4 GHz Intel Core i5 with 2 cores and 4 threads.
+    Therefore, the performance of my computer should be 4*4*2*3.4 gigaFLOPS = 108.8 gigaFLOPS
     
     [1]https://en.wikipedia.org/wiki/FLOPS
